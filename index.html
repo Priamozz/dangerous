@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dangerous</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#000;
+      color:white;
+      font-family:Arial,sans-serif;
+    }
+
+    nav{
+      background:#000;
+      padding:20px;
+      text-align:center;
+      border-bottom:2px solid red;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav a{
+      color:red;
+      text-decoration:none;
+      margin:20px;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:white;
+    }
+
+    .hero{
+      text-align:center;
+      padding-top:20px;
+    }
+
+    .hero img{
+      width:100%;
+      max-width:900px;
+      height:auto;
+      display:block;
+      margin:-120px auto -180px auto;
+    }
+
+    .hero-content{
+      padding:0;
+    }
+
+    .hero-content h1{
+      color:red;
+      font-size:70px;
+      text-shadow:
+              0 0 10px red,
+              0 0 20px red,
+              0 0 40px red;
+      margin-bottom:20px;
+    }
+
+    .hero-content p{
+      font-size:28px;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:red;
+      color:white;
+      text-decoration:none;
+      padding:15px 35px;
+      border-radius:10px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      box-shadow:0 0 20px red;
+      transform:scale(1.05);
+    }
+
+    .cards{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:30px;
+      padding:50px;
+    }
+
+    .card{
+      width:300px;
+      border:2px solid red;
+      border-radius:15px;
+      padding:30px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 20px red;
+    }
+
+    .card h2{
+      color:red;
+      margin-bottom:15px;
+    }
+
+    .card p{
+      color:#ddd;
+    }
+
+    footer{
+      margin-top:50px;
+      border-top:2px solid red;
+      text-align:center;
+      padding:30px;
+      background:#000;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#">Αρχική</a>
+  <a href="#">Σχετικά</a>
+  <a href="#">Υπηρεσίες</a>
+  <a href="#">Επικοινωνία</a>
+</nav>
+
+<div class="hero">
+
+  <img src="foto.png" alt="Dangerous">
+
+  <div class="hero-content">
+    <h1>DANGEROUS</h1>
+    <p>Welcome To The Dangerous Zone</p>
+
+    <a href="#" class="btn">
+      JOIN DISCORD
+    </a>
+  </div>
+
+</div>
+
+<div class="cards">
+
+  <div class="card">
+    <h2>Κοινότητα</h2>
+    <p>Μια ενεργή κοινότητα για gaming και συζητήσεις.</p>
+  </div>
+
+  <div class="card">
+    <h2>Gaming</h2>
+    <p>Gaming νέα, events και τουρνουά.</p>
+  </div>
+
+  <div class="card">
+    <h2>Ασφάλεια</h2>
+    <p>Η ασφάλεια των μελών μας είναι προτεραιότητα.</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Dangerous
+</footer>
+
+</body>
+</html>
